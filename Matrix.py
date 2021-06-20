@@ -15,11 +15,11 @@ r_lsum = 0
 
 for index in range(size):
     l_rsum += matrix[index][index]
-print(l_rsum)
+print("Sum of left-to-right diagonal elements =", l_rsum)
 
 
 for index in range(size):
     r_lsum += matrix[index][size - 1 - index]
-print(r_lsum)
+print("Sum of right-to-left diagonal elements =", r_lsum)
 
-print("\nAbsolute Difference = " ,abs(l_rsum - r_lsum))
+print("\nAbsolute Difference =", abs(l_rsum - r_lsum))
